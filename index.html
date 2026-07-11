@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Zicheng Wang | Researcher</title>
+  <meta
+    name="description"
+    content="Personal research website of Your Name, a researcher working on your research areas."
+  >
+
+  <style>
+    :root {
+      --background: #ffffff;
+      --surface: #f5f7fa;
+      --text: #20242a;
+      --muted: #59636e;
+      --accent: #2457a7;
+      --border: #dfe4ea;
+      --maximum-width: 960px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration-thickness: 2px;
+    }
+
+    .container {
+      width: min(92%, var(--maximum-width));
+      margin: 0 auto;
+    }
+
+    nav {
+      border-bottom: 1px solid var(--border);
+      background: var(--background);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      padding: 0.85rem 0;
+    }
+
+    nav a {
+      color: var(--text);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    header {
+      background: var(--surface);
+      padding: 4rem 0;
+    }
+
+    .profile {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .profile img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid var(--background);
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.2;
+    }
+
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: clamp(2.2rem, 6vw, 3.6rem);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 2rem;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 1.15rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-top: 1.25rem;
+    }
+
+    .links a {
+      font-weight: 600;
+    }
+
+    main section {
+      padding: 3.25rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .research-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .card {
+      padding: 1.25rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .publication {
+      margin-bottom: 1.5rem;
+    }
+
+    .publication p {
+      margin: 0.25rem 0;
+    }
+
+    .publication-title {
+      font-weight: 700;
+    }
+
+    footer {
+      padding: 2.5rem 0;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      .profile {
+        grid-template-columns: 1fr;
+      }
+
+      .profile img {
+        width: 140px;
+        height: 140px;
+      }
+
+      .research-grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        position: static;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav aria-label="Main navigation">
+    <div class="container">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container profile">
+      <!-- Upload profile.jpg, or remove this image element. -->
+      <img src="profile.jpg" alt="Portrait of Your Name">
+
+      <div>
+        <h1>Your Name</h1>
+
+        <p class="subtitle">
+          Your Position · Department or Research Group · University or Institution
+        </p>
+
+        <p>
+          I study a short, accessible description of your main research problem
+          and why it matters.
+        </p>
+
+        <div class="links">
+          <a href="mailto:your.email@example.edu">Email</a>
+          <a href="#" rel="me">ORCID</a>
+          <a href="#">Google Scholar</a>
+          <a href="#">GitHub</a>
+          <a href="cv.pdf">Curriculum vitae</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About</h2>
+
+      <p>
+        I am a researcher in your field at your institution. My work focuses on
+        your broad research area, especially your more specific questions.
+      </p>
+
+      <p>
+        Before joining my current institution, I studied or worked at previous
+        institutions. I received my degree from your university, where I worked
+        with your adviser or research group.
+      </p>
+    </section>
+
+    <section id="research">
+      <h2>Research interests</h2>
+
+      <div class="research-grid">
+        <article class="card">
+          <h3>Research area one</h3>
+          <p>
+            Describe the question, method, population, system, or phenomenon
+            you investigate.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Research area two</h3>
+          <p>
+            Explain this topic in language that researchers outside your
+            specialty can understand.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Research area three</h3>
+          <p>
+            Mention the larger scientific or social significance of this work.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Selected publications</h2>
+
+      <article class="publication">
+        <p class="publication-title">
+          Title of your most important or recent paper
+        </p>
+        <p>
+          <strong>Your Name</strong>, Coauthor One, and Coauthor Two.
+          <em>Journal or Conference</em>, 2026.
+        </p>
+        <p>
+          <a href="#">DOI</a> ·
+          <a href="#">Publisher</a> ·
+          <a href="#">Preprint</a> ·
+          <a href="#">Code</a>
+        </p>
+      </article>
+
+      <article class="publication">
+        <p class="publication-title">
+          Title of another paper or working paper
+        </p>
+        <p>
+          Coauthor One, <strong>Your Name</strong>, and Coauthor Two.
+          <em>Journal or Conference</em>, 2025.
+        </p>
+        <p>
+          <a href="#">DOI</a> ·
+          <a href="#">PDF</a> ·
+          <a href="#">Data</a>
+        </p>
+      </article>
+
+      <p>
+        <a href="#">View all publications on Google Scholar</a>
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article class="card">
+        <h3>Project title</h3>
+        <p>
+          Explain the project's research question, your contribution, current
+          status, collaborators, and any available outputs.
+        </p>
+        <p>
+          <a href="#">Project page</a> ·
+          <a href="#">Code</a> ·
+          <a href="#">Data</a>
+        </p>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+
+      <p>
+        The best way to contact me is by email at
+        <a href="mailto:your.email@example.edu">
+          your.email@example.edu
+        </a>.
+      </p>
+
+      <p>
+        Department or Research Group<br>
+        University or Institution<br>
+        City, Country
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Last updated July 2026 · Built with GitHub Pages</p>
+    </div>
+  </footer>
+</body>
+</html>
